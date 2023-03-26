@@ -48,8 +48,8 @@ export const Hero = () => {
         </span>
         <p className="p-6 ">
           Unaware that a friend or family member is nearby during your travels?
-          Discover <strong className="text-xl ">Together.</strong>, the social
-          app that redefines meaningful connections.
+          Discover <strong className="text-xl ">Together.</strong>, the app that
+          redefines meaningful connections.
         </p>
         <div className="my-4 max-w-xl m-auto">
           <div className="flex flex-col sm:flex-row items-center justify-between w-full">
