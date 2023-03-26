@@ -27,21 +27,21 @@ export const Hero = () => {
     <div className="flex items-center justify-center h-screen mb-20 bg-fixed bf-center bg-cover ">
       {/* text */}
 
-      <div className="p-5 text-center max-w-2xl">
+      <div className="p-5 text-center lg:max-w-4xl md:max-w-2xl">
         <p className="py-4 font-semibold md:text-sm text-sm">
           CHERISH MEMORIES WITH THOSE WHO MATTER MOST, WHEREVER YOU GO
         </p>
         <span className="title ">
-          <h1 className="style1 md:text-5xl sm:text-4xl text-4xl font-bold">
+          <h1 className="style1 lg:text-7xl md:text-5xl sm:text-4xl text-4xl font-bold">
             A SOCIAL APP THAT IS,
           </h1>
-          <h1 className="style2 md:text-5xl sm:text-4xl text-4xl font-bold">
+          <h1 className="style2 lg:text-7xl md:text-5xl sm:text-4xl text-4xl font-bold">
             WELL,
           </h1>
-          <h1 className="style3 md:text-5xl sm:text-4xl text-4xl font-bold">
+          <h1 className="style3 lg:text-7xl md:text-5xl sm:text-4xl text-4xl font-bold">
             TRULY{" "}
             <span
-              className="style3 md:text-5xl sm:text-4xl text-4xl font-bold text-white"
+              className="style3 lg:text-7xl md:text-5xl sm:text-4xl text-4xl font-bold text-white"
               ref={el}
             ></span>
           </h1>
