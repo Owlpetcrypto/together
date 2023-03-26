@@ -4,84 +4,17 @@
 
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
-
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   font-size: 16px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Raleway";
   scroll-behavior: smooth !important;
 }
 
 body {
   background-color: #fdd140;
-}
-
-.container {
-  margin: 2rem auto 0;
-  max-width: 10000px;
-  width: 100%;
-}
-
-ul {
-  font-weight: 600;
-}
-
-a {
-  margin: auto;
-  border: 1px solid transparent;
-  padding: 1rem 1.2rem;
-  border-radius: 10px;
-}
-
-a:hover {
-  background-color: black;
-  color: white;
-  transition: 0.3s;
-}
-
-h1,
-li {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 4rem 0 10rem;
-  padding: 0 8rem;
-}
-
-ul {
-  display: flex;
-  gap: 3rem;
-}
-
-.header__plane {
-  position: absolute;
-  left: 3rem;
-  top: 2rem;
-}
-
-/*/////////////////////////////////////// fancy typography /////////////////////////////////////*/
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 2rem;
-  gap: 2.5rem;
-}
-
-.title span {
-  font-size: 5rem;
-  font-weight: 800;
-  text-align: center;
-  letter-spacing: -1px;
-  line-height: 100%;
 }
 
 .title {
@@ -100,7 +33,7 @@ ul {
   --delay: 1.2s;
 }
 
-.title span {
+.title h1 {
   --total: calc(var(--duration) + var(--delay));
   position: relative;
   display: block;
@@ -108,7 +41,7 @@ ul {
   overflow: hidden;
   animation: reveal 2s var(--total) forwards;
 }
-.title span::after {
+.title h1::after {
   content: "";
   position: absolute;
   top: 0;
@@ -121,7 +54,7 @@ ul {
   animation: rollIn var(--duration) var(--delay) forwards,
     rollOut var(--duration) var(--total) forwards;
 }
-.title span:nth-child(2)::after {
+.title h1:nth-child(2)::after {
   border-top: 3px solid #4831d4;
 }
 @keyframes reveal {
@@ -146,150 +79,8 @@ ul {
   }
 }
 
-/* ////////////////////////////////main ////////////////////////////////*/
+/* ///////////////////////////////////// */
 
-.main__circle {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  background-color: white;
-  position: absolute;
-  top: 0;
-  z-index: -99999;
-}
-
-.main__description {
-  text-align: center;
-  max-width: 55rem;
-  margin: auto;
-}
-
-p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-form {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-input {
-  height: 57.5px;
-  width: 25rem;
-  margin: 0 0.5rem;
-  padding: 0 1rem;
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
-
-.button {
-  border: 1px solid transparent;
-  max-width: max-content;
-  padding: 0.8rem 2rem;
-  border-radius: 10px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  background-color: black;
-  color: white;
-}
-
-.button:hover {
-  background-color: #243053;
-  transition: 0.3s;
-}
-
-hr {
-  border-color: transparent;
-  margin: auto auto 8rem;
-}
-
-/*////////////////////////////////////////// GetStart ////////////////////////////////////////// */
-.getting-started {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.started {
-  font-size: 4.5rem;
-  font-weight: 800;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 25rem;
-  max-width: 20rem;
-  width: 100%;
-  border-radius: 30px;
-  border: 1px solid transparent;
-  padding: 1rem;
-  text-align: center;
-  background-color: #fff;
-  gap: 1rem;
-}
-
-.images {
-  display: flex;
-  gap: 5rem;
-  justify-content: center;
-  padding: 0 5rem;
-  width: 100%;
-  height: 30rem;
-  align-items: center;
-}
-
-.bold-title {
-  font-weight: 800;
-  font-size: 2rem;
-  margin-bottom: 0;
-}
-
-.cards-p {
-  font-size: 1.1rem;
-}
-
-img {
-  margin-top: 2rem;
-}
-
-section {
-  margin-bottom: 11rem;
-}
-
-/* Footer */
-footer {
-  background: black;
-  padding: 3rem 0;
-  font-size: 0.9rem;
-  margin-top: 10rem;
-  text-align: center;
-}
-
-.footer__logo {
-  font-size: 1.2rem;
-  font-weight: bolder;
-  margin-bottom: 1rem;
-  display: inline-block;
-  color: white;
-}
-
-.footer__nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  color: white;
-}
-
-.footer__copyright {
-  margin: 1rem;
-  color: white;
-}
-
-.footer__email {
-  color: white;
+.custom-img {
+  background-image: url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1421&q=80);
 }
